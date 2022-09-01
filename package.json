@@ -35,13 +35,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/timok06/react-native-sensor-ambient-light",
+  "repository": "https://github.com/enna-systems/react-native-sensor-ambient-light",
   "author": "Timo Köhler <t.koehler@enna.care> (https://github.com/timok06)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/timok06/react-native-sensor-ambient-light/issues"
+    "url": "https://github.com/enna-systems/react-native-sensor-ambient-light/issues"
   },
-  "homepage": "https://github.com/timok06/react-native-sensor-ambient-light#readme",
+  "homepage": "https://github.com/enna-systems/react-native-sensor-ambient-light#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -147,5 +147,9 @@
         }
       ]
     ]
+  },
+  "packageManager": "yarn@3.2.3",
+  "dependencies": {
+    "bob": "^2.7.0"
   }
 }
