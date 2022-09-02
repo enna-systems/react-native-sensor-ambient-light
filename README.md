@@ -1,5 +1,5 @@
 # react-native-sensor-ambient-light
-React Native Module for android to read ambient light sensors value
+React Native Module for android only to read ambient light sensors value
 ## Installation
 
 ```sh
@@ -9,16 +9,32 @@ npm install react-native-sensor-ambient-light
 ## Usage
 
 ```js
-import { multiply } from "react-native-sensor-ambient-light";
+import {
+  startUpdateLightSensor,
+  stopUpdateLightSensor,
+} from 'react-native-sensor-ambient-light';
 
 // ...
 
-const result = await multiply(3, 7);
+useEffect(() => {
+    if (Platform.OS === 'android') {
+      startUpdateLightSensor();
+
+      const subscription = DeviceEventEmitter.addListener(
+        'AmbientLightSensor',
+        (data: { lightValue: number; maxRange: number }) => {
+          console.log('light', data.lightValue);
+          console.log('maxRange', data.maxRange);
+        },
+      );
+
+      return () => {
+        stopUpdateLightSensor();
+        subscription?.remove();
+      };
+    }
+  }, []);
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 ## License
 
