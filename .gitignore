@@ -54,6 +54,13 @@ npm-debug.log
 yarn-debug.log
 yarn-error.log
 
+.circleci/
+.yarn/
+.editorconfig
+.yarnrc
+.yarnrc.yml
+.watchmanconfig
+
 # BUCK
 buck-out/
 \.buckd/
