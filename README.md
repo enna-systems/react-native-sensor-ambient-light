@@ -9,6 +9,7 @@ npm install react-native-sensor-ambient-light
 ## Usage
 
 ```js
+import { DeviceEventEmitter, Platform } from 'react-native';
 import {
   startUpdateLightSensor,
   stopUpdateLightSensor,
