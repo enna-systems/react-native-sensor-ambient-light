@@ -1,6 +1,6 @@
 {
   "name": "react-native-sensor-ambient-light",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -47,28 +47,28 @@
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
-    "@babel/eslint-parser": "^7.18.2",
-    "@commitlint/config-conventional": "^17.0.2",
-    "@react-native-community/eslint-config": "^3.0.2",
+    "@babel/eslint-parser": "^7.22.9",
+    "@commitlint/config-conventional": "^17.6.7",
+    "@react-native-community/eslint-config": "^3.2.0",
     "@release-it/conventional-changelog": "^5.0.0",
     "@types/jest": "^28.1.2",
-    "@types/react": "~17.0.21",
-    "@types/react-native": "0.68.0",
-    "commitlint": "^17.0.2",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.5.0",
+    "@types/react": "~18.2.18",
+    "@types/react-native": "^0.72.2",
+    "commitlint": "^17.6.7",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-prettier": "^4.0.0",
     "jest": "^28.1.1",
     "pod-install": "^0.1.0",
-    "prettier": "^2.0.5",
-    "react": "17.0.2",
-    "react-native": "0.68.2",
-    "react-native-builder-bob": "^0.18.3",
+    "prettier": "^2.8.8",
+    "react": "18.2.0",
+    "react-native": "^0.71.12",
+    "react-native-builder-bob": "^0.21.3",
     "release-it": "^15.0.0",
-    "typescript": "^4.5.2"
+    "typescript": "^5.1.6"
   },
   "resolutions": {
-    "@types/react": "17.0.21"
+    "@types/react": "^18.2.18"
   },
   "peerDependencies": {
     "react": "*",
@@ -150,7 +150,5 @@
     ]
   },
   "packageManager": "yarn@3.2.3",
-  "dependencies": {
-    "bob": "^2.7.0"
-  }
+  "dependencies": {}
 }
